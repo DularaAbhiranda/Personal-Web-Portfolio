@@ -812,10 +812,6 @@ section,
 }
 
 
-
-
-
-
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -927,57 +923,137 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Certification Section
 --------------------------------------------------------------*/
-.services .service-item {
+.achievements-content {
   position: relative;
+  overflow: hidden;
 }
 
-.services .service-item .icon {
-  background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid var(--accent-color);
-  margin-right: 20px;
+.achievements-image {
+  width: 100%;
+  height: 250px; /* Ensure this height matches across all images */
+  object-fit: cover;
 }
 
-.services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
+.achievements-info {
+  padding: 20px;
 }
 
-.services .service-item:hover .icon {
-  background: var(--surface-color);
+.achievements-item {
+  margin-bottom: 20px;
 }
 
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
+.achievements-item .details-link {
+  margin-right: 10px;
 }
 
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+.achievements .achievements-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
 }
 
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
+.achievements .achievements-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
   font-size: 14px;
+  font-weight: 400;
+  margin: 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
+
+.achievements .achievements-filters li:hover,
+.achievements .achievements-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.achievements .achievements-filters li:first-child {
+  margin-left: 0;
+}
+
+.achievements .achievements-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .achievements .achievements-filters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.achievements .achievements-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements .achievements-content img {
+  transition: 0.3s;
+}
+
+.achievements .achievements-content .achievements-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.achievements .achievements-content .achievements-info h4 {
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  background-color: var(--accent-color);
+}
+
+.achievements .achievements-content .achievements-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.achievements .achievements-content .achievements-info .details-link {
+  position: absolute;
+  left: calc(50% - 40px);
+  font-size: 26px;
+  top: calc(50% - 14px);
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
+}
+
+.achievements .achievements-content .achievements-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.achievements .achievements-content:hover .achievements-info {
+  opacity: 1;
+}
+
+.achievements .achievements-content:hover .achievements-image {
+  transform: scale(1.1);
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
