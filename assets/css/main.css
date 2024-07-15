@@ -922,6 +922,8 @@ section,
   transform: scale(1.1);
 }
 
+
+
 /*--------------------------------------------------------------
 # Certification Section
 --------------------------------------------------------------*/
@@ -1053,8 +1055,6 @@ section,
 
 
 
-
-
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1157,8 +1157,9 @@ section,
 --------------------------------------------------------------*/
 .contact .info-wrap {
   background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.395);
+  padding: 50px;
+  margin-left: 10px;
 }
 
 @media (max-width: 575px) {
@@ -1168,7 +1169,7 @@ section,
 }
 
 .contact .info-item {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .contact .info-item i {

@@ -223,32 +223,6 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 
-  /**
-   * Certifications: 
-   */
-  document.addEventListener("DOMContentLoaded", function() {
-    var certificationIso = new Isotope('.certifications .isotope-container', {
-      itemSelector: '.certification-item',
-      layoutMode: 'fitRows'
-    });
-  
-    // Bind filter button click
-    var filters = document.querySelectorAll('.certifications .certification-filters li');
-    filters.forEach(function(filter) {
-      filter.addEventListener('click', function() {
-        var filterValue = this.getAttribute('data-filter');
-        certificationIso.arrange({ filter: filterValue });
-  
-        // Change active class on buttons
-        filters.forEach(function(button) {
-          button.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-      });
-    });
-  });
-  
-  
   
 
 })();
