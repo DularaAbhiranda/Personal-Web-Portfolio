@@ -146,9 +146,9 @@ h6 {
 }
 
 .header .profile-img img {
-  margin: 15px auto;
+  margin: 50px auto;
   display: block;
-  width: 120px;
+  width: 150px;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
@@ -248,8 +248,8 @@ h6 {
 
 .navmenu ul {
   list-style: none;
-  padding: 0 0 20px 0;
-  margin: 0;
+  padding: 0% 0 20px 50px;
+  margin: 20px;
 }
 
 .navmenu a,
@@ -313,41 +313,6 @@ h6 {
   transform: rotate(180deg);
 }
 
-.navmenu .dropdown {
-  display: block;
-}
-
-.navmenu .dropdown a,
-.navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
-}
-
-.navmenu .dropdown a:hover,
-.navmenu .dropdown .active,
-.navmenu .dropdown .active:focus {
-  color: var(--nav-dropdown-hover-color);
-}
-
-.navmenu .dropdown ul {
-  position: static;
-  display: none;
-  z-index: 99;
-  padding: 5px 10px;
-  margin: 5px 10px;
-  background-color: var(--nav-dropdown-background-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.navmenu .dropdown ul ul {
-  background-color: rgba(33, 37, 41, 0.1);
-}
-
-.navmenu .dropdown>.dropdown-active {
-  display: block;
-  background-color: rgba(33, 37, 41, 0.03);
-}
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -609,6 +574,30 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+/* Button container styling with margin for spacing */
+.text-center {
+  text-align: center; /* Keeps the button centered */
+  margin-top: 20px; /* Adds space above the button to push it down */
+}
+
+/* Button styling */
+.btn-download {
+  padding: 20px 40px; /* Increase padding for a larger button */
+  background-color: #19426d; /* Dark blue background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  border-radius: 50px; /* Rounded borders */
+  font-size: 16px; /* Font size can be adjusted as needed */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.btn-download:hover {
+  background-color: #2e547d; /* Slightly darker shade of blue on hover */
+}
+
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -636,26 +625,37 @@ section,
   line-height: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+
+/* Stats Section Adjustment */
+.stats {
+  margin-top: -50px; /* Pulls the section upwards by 50px */
+  position: relative; /* Ensures the section is positioned relative to its normal flow */
+  z-index: 10; /* Ensures it does not get hidden behind other content that might have a higher stacking context */
+}
+
+
 .stats .stats-item {
-  padding: 30px;
+  padding: 0px;
   width: 100%;
 }
 
 .stats .stats-item i {
   color: var(--accent-color);
   display: block;
-  font-size: 44px;
+  font-size: 50px;
   float: left;
   line-height: 0;
 }
 
 .stats .stats-item .purecounter {
   color: var(--heading-color);
-  font-size: 48px;
-  line-height: 40px;
+  font-size: 60px;
+  line-height: 50px;
   display: block;
   font-weight: 700;
   margin-left: 60px;
@@ -668,6 +668,14 @@ section,
   font-family: var(--heading-font);
   font-size: 14px;
 }
+
+
+@media (max-width: 768px) {
+  .text-center {
+      margin-top: 10px; /* Less space on smaller screens */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -787,6 +795,36 @@ section,
   width: 100%;
 }
 */
+
+
+.portfolio-item { display: none; }
+.portfolio-item.show { display: block; }
+
+
+.portfolio-filters li {
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+}
+
+.load-more-text {
+  display: inline-block;
+  color: #000000;  /* Primary color for interactivity */
+  font-weight: 600;  /* Makes the text bolder */
+  margin-top: 20px;  /* Spacing for better visibility */
+  cursor: pointer;  /* Changes the cursor to indicate it's clickable */
+  text-decoration: none;  /* Removes underline typically found on links */
+  transition: color 0.3s;  /* Smooth color transition for hover effects */
+}
+
+.load-more-text:hover {
+  color: #0056b3;  /* Darker shade on hover for feedback */
+}
+
+
+
+
+
 
 .portfolio-content {
   position: relative;
@@ -1055,102 +1093,28 @@ section,
 
 
 
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
+/* Certificates Section Styles */
+.certificates .certificate-item {
   text-align: center;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
   padding: 20px;
-  background-color: var(--surface-color);
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .testimonial-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid var(--surface-color);
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
-}
-
-.testimonials .swiper-wrapper {
+.certificates .certificate-img {
+  max-width: 100%;
   height: auto;
+  border-radius: 8px; /* Optional: for styling the images */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
 }
 
-.testimonials .swiper-pagination {
-  margin-top: 40px;
-  position: relative;
+.certificates h3 {
+  margin-top: 10px;
+  color: #0056b3; /* Theme color for headings */
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--background-color);
-  opacity: 1;
-  border: 1px solid var(--accent-color);
+.certificates h4 {
+  color: #666; /* Subdued text color for sub-headings */
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1315,70 +1279,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-/*--------------------------------------------------------------
-# Service Details Section
---------------------------------------------------------------*/
-.service-details .services-list {
-  padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
-}
 
-.service-details .services-list a {
-  display: block;
-  line-height: 1;
-  padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: 0.3s;
-}
-
-.service-details .services-list a.active {
-  color: var(--heading-color);
-  font-weight: 700;
-  border-color: var(--accent-color);
-}
-
-.service-details .services-list a:hover {
-  border-color: var(--accent-color);
-}
-
-.service-details .services-img {
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-details h4 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Starter Section Section

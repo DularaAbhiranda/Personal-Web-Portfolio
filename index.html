@@ -29,6 +29,10 @@
 
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
 </head>
 
@@ -57,10 +61,10 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-gear-fill navicon"></i> Skills</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Education</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#portfolio"><i class="bi bi-briefcase-fill navicon"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="bi bi-telephone-fill navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -90,21 +94,18 @@
           My interests lie in Cloud Networking and Cybersecurity, with proficiency in Cisco device configuration. Currently, I am working on a machine learning project to apply 
           ML in networking, project development, and future analysis. I am also learning RedHat technology, active in THM and HTB, and passionate about exploring new technologies 
           and projects.</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\aboutme.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Cloud Networking and CyberSecurity</h2>
+        <div class="row gy-5 justify-content-center">
+          <div class="col-lg-20 content">
             <p class="fst-italic py-3">
               Here my personal details...
             </p>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-4">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>November 2001</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.abhirandaSilva.com</span></li>
@@ -121,13 +122,12 @@
                 </ul>
               </div>
             </div>
-            <p class="py-3">
-              <a href="assets/Dulara Abhiranda.pdf" download="Dulara Abhiranda CV">
-                <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 5px;">
-                    Download CV
-                </button>
+            <p class="py-2 text-center">
+              <a href="assets/Dulara Abhiranda.pdf" download="Dulara Abhiranda CV" class="download-btn">
+                  <button class="btn-download">Download CV</button>
               </a>
-            </p>            
+            </p>
+                     
           </div>
         </div>
 
@@ -136,7 +136,6 @@
     </section>
     <!-- /About Section -->
 
-    <!-- Stats Section -->
      <!-- Stats Section -->
       <section id="stats" class="stats section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -152,7 +151,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="stats-item">
                 <i class="bi bi-box"></i>
-                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
                 <p><strong>Hack The Box</strong> <span>completed challenges</span></p>
               </div>
             </div><!-- End Hack The Box Stats Item -->
@@ -173,226 +172,239 @@
 
 
     <!-- Skills Section -->
-<section id="skills" class="skills section light-background">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Highlighting my expertise in various domains.</p>
-  </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row skills-content skills-animation">
-      <!-- Web Development Card -->
-      <div class="col-lg-6">
-        <div class="card skill-card">
-          <div class="card-body">
-            <h5 class="card-title">Web Development</h5>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\html.png" alt="HTML" class="skill-logo">
-                <span>HTML</span> 
-                <i class="val">100%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\CSS.png" alt="CSS" class="skill-logo">
-                <span>CSS</span> 
-                <i class="val">90%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\java-script.png" alt="JavaScript" class="skill-logo">
-                <span>JavaScript</span> 
-                <i class="val">75%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\React.png" alt="JavaScript" class="skill-logo">
-                <span>React</span> 
-                <i class="val">75%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\node-js.png" alt="JavaScript" class="skill-logo">
-                <span>Node</span> 
-                <i class="val">75%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\MongoDB_Logo.svg" alt="JavaScript" class="skill-logo">
-                <span>MongoDB</span> 
-                <i class="val">75%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    <section id="skills" class="skills section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Highlighting my expertise in various domains.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <!-- Web Development Card -->
+          <div class="col-lg-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/html.png" alt="HTML" class="skill-logo">
+                    <span>HTML</span> 
+                    <i class="val">100%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/CSS.png" alt="CSS" class="skill-logo">
+                    <span>CSS</span> 
+                    <i class="val">90%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/java-script.png" alt="JavaScript" class="skill-logo">
+                    <span>JavaScript</span> 
+                    <i class="val">75%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/React.png" alt="React" class="skill-logo">
+                    <span>React</span> 
+                    <i class="val">75%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/node-js.png" alt="Node" class="skill-logo">
+                    <span>Node</span> 
+                    <i class="val">75%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/Ballerina.png" alt="Ballerina" class="skill-logo">
+                    <span>Ballerina</span> 
+                    <i class="val">75%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- End Web Development Card -->
+
+          <!-- Cloud Card -->
+          <div class="col-lg-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">Cloud and Database Systems</h5>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/oracle.png" alt="Oracle" class="skill-logo">
+                    <span>Oracle Cloud</span> 
+                    <i class="val">85%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/azure.png" alt="Azure" class="skill-logo">
+                    <span>MS Azure</span> 
+                    <i class="val">90%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/google-cloud.png" alt="Google Cloud" class="skill-logo">
+                    <span>Google Cloud</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/mysql.png" alt="MYSQL" class="skill-logo">
+                    <span>MySQL</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/Firebase.png" alt="Firebase" class="skill-logo">
+                    <span>Firebase</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/MongoDB_Logo.svg" alt="MongoDB" class="skill-logo">
+                    <span>MongoDB</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Cloud Service Card -->
+
+          <!-- Networking Card -->
+          <div class="col-lg-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">Networking And CyberSecurity</h5>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/\img/icons/packet tracer.png " alt="Packet Tracer" class="skill-logo">
+                    <span>Cisco Packet Tracer</span> 
+                    <i class="val">85%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/64px-Wireshark_icon_new.png" alt="WireShark" class="skill-logo">
+                    <span>WireShark</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/red-hat-ansible-vector-logo.svg" alt="Ansible" class="skill-logo">
+                    <span>RedHat Ansible</span> 
+                    <i class="val">80%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Networking Card -->
+
+          <!-- Others Card -->
+          <div class="col-lg-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">Others</h5>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/linux.png" alt="Linux" class="skill-logo">
+                    <span>Linux OS</span> 
+                    <i class="val">75%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/github.png" alt="GitHub" class="skill-logo">
+                    <span>GitHub</span> 
+                    <i class="val">90%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">
+                    <img src="assets/img/icons/virtualbox.png" alt="virtualbox" class="skill-logo">
+                    <span>Oracle VM</span> 
+                    <i class="val">90%</i>
+                  </span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Others Card -->
         </div>
       </div>
-      <!-- End Web Development Card -->
-
-      <!-- Cloud Card -->
-      <div class="col-lg-6">
-        <div class="card skill-card">
-          <div class="card-body">
-            <h5 class="card-title">Cloud and Database Systems</h5>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\oracle.png" alt="Wireshark" class="skill-logo">
-                <span>Oracle Cloud</span> 
-                <i class="val">85%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\azure.png" alt="Cisco Packet Tracer" class="skill-logo">
-                <span>MS Azure</span> 
-                <i class="val">90%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\google-cloud.png" alt="Protocols" class="skill-logo">
-                <span>Google Cloud</span> 
-                <i class="val">80%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\mysql.png" alt="Protocols" class="skill-logo">
-                <span>MySQL</span> 
-                <i class="val">80%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\Firebase.png" alt="Protocols" class="skill-logo">
-                <span>Firebase</span> 
-                <i class="val">80%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Cloud Service Card -->
-
-      <!-- Networking Card -->
-      <div class="col-lg-6">
-        <div class="card skill-card">
-          <div class="card-body">
-            <h5 class="card-title">Networking And CyberSecurity</h5>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\packet tracer.png" alt="Python" class="skill-logo">
-                <span>Cisco Packet Tracer</span> 
-                <i class="val">85%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\64px-Wireshark_icon_new.png" alt="Pandas" class="skill-logo">
-                <span>WireShark</span> 
-                <i class="val">80%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\red-hat-ansible-vector-logo.svg" alt="Pandas" class="skill-logo">
-                <span>RedHat Ansible</span> 
-                <i class="val">80%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Networking Card -->
-
-      <!-- Others Card -->
-      <div class="col-lg-6">
-        <div class="card skill-card">
-          <div class="card-body">
-            <h5 class="card-title">Others</h5>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\linux.png" alt="Ansible" class="skill-logo">
-                <span>Linux OS</span> 
-                <i class="val">75%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\github.png" alt="GitHub" class="skill-logo">
-                <span>GitHub</span> 
-                <i class="val">90%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">
-                <img src="C:\Users\abhir\Desktop\Portfolio\assets\img\icons\virtualbox.png" alt="GitHub" class="skill-logo">
-                <span>Oracle VM</span> 
-                <i class="val">90%</i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Others Card -->
-    </div>
-  </div>
-</section><!-- /Skills Section -->
+    </section>
+    
+    <!-- /Skills Section -->
 
 
     <!-- Resume Section -->
@@ -500,23 +512,18 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>I have completed a variety of projects across several domains, showcasing my versatility and expertise in the field. My portfolio includes networking projects using Cisco Packet Tracer and cloud networking projects that leverage the latest technologies. I have also worked on machine learning projects, integrating AI to solve real-world problems, as well as IoT projects that connect devices for smarter solutions. Additionally, I have developed mobile applications and created network-related tools utilizing Ansible Playbook and Wireshark, further demonstrating my proficiency in network configuration and monitoring.</p>
+          <h2>Projects</h2>
+          <p>I have completed a variety of projects across several domains, showcasing my versatility and expertise in the field.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Network Design</li>
-            <li data-filter=".filter-product">Web Development</li>
-            <li data-filter=".filter-branding">Machine Learning</li>
-            <li data-filter=".filter-books">Other</li>
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Network Design</li>
+              <li data-filter=".filter-product">Web Development</li>
+              <li data-filter=".filter-branding">Machine Learning</li>
+              <li data-filter=".filter-books">Other</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -666,211 +673,80 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Container -->
+      </div><!-- End Portfolio Container -->
 
-        </div>
-
+            <div class="col-12 text-center">
+              <a href="javascript:void(0);" id="loadMore" class="load-more-text">Show More...</a>
+            </div>
       </div>
+  </section>
+  <!-- /Portfolio Section -->
 
-    </section><!-- /Portfolio Section -->
 
 
-
-    <!-- Certification Section -->
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements section light-background">
-
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Achievements</h2>
-        <p>Highlighting key achievements and certifications that showcase my skills and expertise.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="achievements-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-cisco">Cisco Networking</li>
-            <li data-filter=".filter-azure">MS Azure</li>
-            <li data-filter=".filter-google">Google Cloud</li>
-            <li data-filter=".filter-development">Development</li>
-            <li data-filter=".filter-other">Other</li>
-          </ul><!-- End Achievements Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Example Achievement Item -->
-            <div class="col-lg-4 col-md-6 achievements-item isotope-item filter-cisco">
-              <div class="achievements-content h-100">
-                <img src="assets/img/Certificates/Intro2PT.png" class="img-fluid achievements-image" alt="">
-                <div class="achievements-info">
-                  <h4>Cisco Certified Network Associate (CCNA)</h4>
-                  <p>Achieved CCNA certification, demonstrating proficiency in Cisco networking.</p>
-                  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Achievement Item -->
-
-            <!-- Example Achievement Item -->
-            <div class="col-lg-4 col-md-6 achievements-item isotope-item filter-azure">
-              <div class="achievements-content h-100">
-                <img src="assets/img/Certificates/Describe access management capabilities of Microsoft Entra ID.jpg" class="img-fluid achievements-image" alt="">
-                <div class="achievements-info">
-                  <h4>Microsoft Azure Fundamentals</h4>
-                  <p>Completed Microsoft Azure Fundamentals certification, showcasing cloud computing skills.</p>
-                  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Achievement Item -->
-
-            <!-- Example Achievement Item -->
-            <div class="col-lg-4 col-md-6 achievements-item isotope-item filter-google">
-              <div class="achievements-content h-100">
-                <img src="assets/img/achievements/google_cloud_certification.jpg" class="img-fluid achievements-image" alt="">
-                <div class="achievements-info">
-                  <h4>Google Cloud Professional Cloud Architect</h4>
-                  <p>Earned Google Cloud Professional Cloud Architect certification, demonstrating cloud infrastructure skills.</p>
-                  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Achievement Item -->
-
-            <!-- Add more achievement items as needed -->
-
-          </div><!-- End Achievements Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Achievements Section -->
-
-
-
-
-
-    
-
-    <!-- Testimonials Section -->
-
-
-
-
-
-
-
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <h2>Certificates</h2>
+          <p>Here are some of my professional certifications that validate my skills and expertise.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+              <div class="swiper-wrapper">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
+                  <!-- Certificate Item -->
+                  <div class="swiper-slide">
+                      <div class="certificate-item">
+                          <img src="assets/img/Certificates/Describe access management capabilities of Microsoft Entra ID.jpg" class="certificate-img" alt="Certificate 1">
+                          <h3>Certified Network Associate</h3>
+                          <h4>Cisco</h4>
+                      </div>
+                  </div><!-- End Certificate Item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                  <!-- Certificate Item -->
+                  <div class="swiper-slide">
+                      <div class="certificate-item">
+                          <img src="assets/img/Certificates/Describe access management capabilities of Microsoft Entra ID.jpg" class="certificate-img" alt="Certificate 2">
+                          <h3>Certified Cloud Practitioner</h3>
+                          <h4>Amazon Web Services</h4>
+                      </div>
+                  </div><!-- End Certificate Item -->
+
+                  <!-- Certificate Item -->
+                  <div class="swiper-slide">
+                      <div class="certificate-item">
+                          <img src="assets/img/Certificates/Describe access management capabilities of Microsoft Entra ID.jpg" class="certificate-img" alt="Certificate 3">
+                          <h3>Certified Ethical Hacker</h3>
+                          <h4>EC-Council</h4>
+                      </div>
+                  </div><!-- End Certificate Item -->
+
+                  <!-- Certificate Item -->
+                  <div class="swiper-slide">
+                    <div class="certificate-item">
+                        <img src="assets/img/Certificates/Describe access management capabilities of Microsoft Entra ID.jpg" class="certificate-img" alt="Certificate 3">
+                        <h3>Certified Ethical Hacker</h3>
+                        <h4>EC-Council</h4>
+                    </div>
+                </div><!-- End Certificate Item -->
+
+                <!-- Certificate Item -->
+                <div class="swiper-slide">
+                  <div class="certificate-item">
+                      <img src="assets/img/Certificates/Intro2PT.png" class="certificate-img" alt="Certificate 3">
+                      <h3>Certified Ethical Hacker</h3>
+                      <h4>EC-Council</h4>
+                  </div>
+              </div><!-- End Certificate Item -->
+
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+              <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
       </div>
+    </section><!-- /Certificates Section -->
 
-    </section><!-- /Testimonials Section -->
 
 
 
@@ -1038,6 +914,94 @@
   <script>
     AOS.init();
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.init-swiper', {
+          loop: true,
+          speed: 600,
+          autoplay: {
+              delay: 5000
+          },
+          slidesPerView: 'auto',
+          pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+          },
+          breakpoints: {
+              320: {
+                  slidesPerView: 1,
+                  spaceBetween: 40
+              },
+              1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 20
+              }
+          }
+      });
+  });
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.isotope-container .portfolio-item');
+    const showMoreButton = document.getElementById('loadMore');
+    let isExpanded = false; // State tracking whether the portfolio is expanded
+
+    function updateItemsDisplay(limit) {
+        items.forEach((item, index) => {
+            if (index < limit || isExpanded) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    function togglePortfolioDisplay() {
+        isExpanded = !isExpanded;
+        const limit = isExpanded ? items.length : 6;
+        updateItemsDisplay(limit);
+        showMoreButton.textContent = isExpanded ? "Show Less..." : "Show More...";
+    }
+
+    // Initialize with only 6 items showing
+    updateItemsDisplay(6);
+
+    showMoreButton.addEventListener('click', togglePortfolioDisplay);
+
+    // Category filtering with highlighting
+    const filters = document.querySelectorAll('.portfolio-filters li');
+    filters.forEach(filter => {
+        filter.addEventListener('click', function() {
+            // Remove active class from all filters and add to the current one
+            filters.forEach(f => f.classList.remove('filter-active'));
+            filter.classList.add('filter-active');
+
+            const category = filter.getAttribute('data-filter');
+            const visibleCount = Array.from(items).filter(item => {
+                if (category === '*' || item.classList.contains(category.replace('.', ''))) {
+                    item.style.display = 'block';
+                    return true;
+                } else {
+                    item.style.display = 'none';
+                    return false;
+                }
+            }).length;
+
+            // Adjust the expanded state based on the number of items
+            isExpanded = visibleCount <= 6;
+            showMoreButton.textContent = isExpanded ? "Show More..." : "Show Less..."; // Adjust if fewer than 6 items
+            showMoreButton.style.display = visibleCount > 6 ? 'block' : 'none';
+        });
+    });
+});
+
+
+  </script>
+  
+  
   
 
 </body>
